@@ -4,7 +4,7 @@
 
 This an extension to provide snippets of storybook configures file in a vue project.
 
-![preview](./preview.gif)
+![preview](./preview-gif.gif)
 
 ## Snippet Prefixes
 
