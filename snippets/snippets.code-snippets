@@ -37,7 +37,7 @@
         "\tsetup() {",
         "\t\treturn { args };",
         "\t},",
-        "\ttemplate: '< ${1:ComponentName} v-bind=\"args\"/>',",
+        "\ttemplate: '<${1:ComponentName} v-bind=\"args\"/>',",
         "});",
         "",
         "export const ${3:Primary} = Template.bind({});",

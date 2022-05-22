@@ -10,12 +10,11 @@ This an extension to provide snippets of storybook configures file in a vue proj
 
 | Prefix | Description                |
 | ------ | -------------------------- |
-| vs2    | Snippets for Vue2 Projects |
-| vs3    | Snippets for Vue3 Projects |
+| fs-    | Snippets for Vue and Storybook |
 
 ## Usage
 
-Use `vs2` or `vs3` to generate YourComponent.stories.js file automatically.
+Use `fs-` to help you with some snippets for vue YourComponent.stories.js file automatically.
 
 ## Release Notes
 
@@ -23,14 +22,6 @@ Use `vs2` or `vs3` to generate YourComponent.stories.js file automatically.
 
 Initial release.
 
-### 0.0.5
-
-Updated snippets and added icon.
-## Feedback
-
-Please send any feedback or suggestions by creating issues on GitHub.
-
-If this helps you, please leave a 🌟 at the GitHub repo.
 ## License
 
 MIT
