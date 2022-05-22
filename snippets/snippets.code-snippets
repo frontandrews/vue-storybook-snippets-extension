@@ -1,0 +1,68 @@
+{ 
+    "Create storybook vue 2 component": {
+      "prefix": "fs-storybook-component-vue2",
+      "body": [
+        "import ${1:ComponentName} from '@/components/${2:ComponentName}';",
+        "",
+        "export default {",
+        "\ttitle: 'Components/${1:ComponentName}',",
+        "\tcomponent: ${1:ComponentName},",
+        "};",
+        "",
+        "const Template = (args, { argTypes }) => ({",
+        "\tcomponents: { ${1:ComponentName} },",
+        "\tprops: Object.keys(argTypes),",
+        "\ttemplate: '<${1:ComponentName} :${5:data}=\"${6:data}\"/>',",
+        "});",
+        "",
+        "export const ${3:Primary} = Template.bind({});",
+        "${3:Primary}.args = { ${7:} };",
+        "",
+        "export const ${4:Secondary} = Template.bind({});",
+        "${4:Secondary}.args = { ${8:} };",
+      ]
+    },
+    "Create storybook vue 3 component": {
+      "prefix": "fs-storybook-component-vue3",
+      "body": [
+        "import ${1:ComponentName} from '@/components/${2:ComponentName}';",
+        "",
+        "export default {",
+        "\ttitle: 'Components/${1:ComponentName}',",
+        "\tcomponent: ${1:ComponentName},",
+        "};",
+        "",
+        "const Template = (args) => ({",
+        "\tcomponents: { ${1:ComponentName} },",
+        "\tsetup() {",
+        "\t\treturn { args };",
+        "\t},",
+        "\ttemplate: '< ${1:ComponentName} v-bind=\"args\"/>',",
+        "});",
+        "",
+        "export const ${3:Primary} = Template.bind({});",
+        "${3:Primary}.args = { ${4:} };",
+        "",
+        "export const ${5:Secondary} = Template.bind({});",
+        "${5:Secondary}.args = { ${6:} };",
+      ]
+    },
+    "Vue v-for": {
+        "prefix": "fs-vfor",
+        "body": [
+          "<${1:div} v-for=\"${2:item} in ${2:item}s\" :key=\"${2:item}.id\">",
+          "\t{{ ${2:item} }}",
+          "</${1:div}>"
+        ],
+        "description": "v-for statement"
+    },
+    "Vue v-if": {
+        "prefix": "fs-vif",
+        "body": [
+          "<${1:div} v-if=\"${2:}\">",
+          "${3:}",
+          "</${1:div}>"
+        ],
+        "description": "v-if statement"
+    },
+}
